@@ -7,29 +7,44 @@
     <title>Document</title>
   </head>
   <body>
-    <label>
-      <input type="number" data-value />
-    </label>
+    <section>
+      <div class="calc">
+        <p>Дії: <span class="calc_string"></span></p>
+        <p>Сума: <span class="calc_sum">0</span></p>
+      </div>
+      
+      <div class="buttons">
+        <ul>
+          <li><button type="button" class="clear-all">ac</button></li>
+          <li><button type="button" class="procent">%</button></li>
+          <li><button type="button" class="changes-sign">+/-</button></li>
+        
+        </ul>
+        
+        <ul class="numbers">
+          <li><button type="button" class="numbers_btn" data-input-null>0</button></li>
+          <li><button type="button" class="numbers_btn" data-input-one>1</button></li>
+          <li><button type="button" class="numbers_btn" data-input-two>2</button></li>
+          <li><button type="button" class="numbers_btn" data-input-three>3</button></li>
+          <li><button type="button" class="numbers_btn" data-input-four>4</button></li>
+          <li><button type="button" class="numbers_btn" data-input-five>5</button></li>
+          <li><button type="button" class="numbers_btn" data-input-six>6</button></li>
+          <li><button type="button" class="numbers_btn" data-input-seven>7</button></li>
+          <li><button type="button" class="numbers_btn" data-input-eight>8</button></li>
+          <li><button type="button" class="numbers_btn" data-input-nine>9</button></li>
+          <li><button type="button" class="numbers_btn" data-input-point>.</button></li>
+        </ul>
+        
+        <ul class="signs">
+          <li><button type="button" class="signs_btn" data-add>+</button></li>
+          <li><button type="button" class="signs_btn" data-subtraction>-</button></li>
+          <li><button type="button" class="signs_btn" data-multiplication>*</button></li>
+          <li><button type="button" class="signs_btn" data-division>/</button></li>
+          <li><button type="button" class="signs_btn" data-sum>=</button></li>
+        </ul>
+      </div>
 
-    <button type="button" data-input-null>0</button>
-    <button type="button" data-input-one>1</button>
-    <button type="button" data-input-two>2</button>
-    <button type="button" data-input-three>3</button>
-    <button type="button" data-input-four>4</button>
-    <button type="button" data-input-five>5</button>
-    <button type="button" data-input-six>6</button>
-    <button type="button" data-input-seven>7</button>
-    <button type="button" data-input-eight>8</button>
-    <button type="button" data-input-nine>9</button>
-
-    <button type="button" data-add>+</button>
-    <button type="button" data-subtraction>-</button>
-    <button type="button" data-multiplication>*</button>
-    <button type="button" data-division>/</button>
-    <button type="button" data-sum>=</button>
-
-    <p>Дії: <span class="js-string"></span></p>
-    <p>Сума: <span class="js-sum">0</span></p>
+    </section>
 
     <script src="./js/calc.js" type="module"></script>
   </body>
